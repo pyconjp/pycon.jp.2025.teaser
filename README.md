@@ -1,77 +1,36 @@
-# PyCon JP 2026ティザーサイト
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-PyCon JPのティザーサイトです。Next.jsで構築されています。
+## Getting Started
 
-## 開発環境のセットアップ
-
-### 必要な環境
-
-- Node.js 18.x以上
-- npm
-
-### インストール
-
-```bash
-npm install
-# または
-yarn install
-```
-
-### 開発サーバーの起動
+First, run the development server:
 
 ```bash
 npm run dev
-# または
+# or
 yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-[http://localhost:3000](http://localhost:3000) でアクセスできます。
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## ビルド
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-```bash
-npm run build
-# または
-yarn build
-```
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## プロダクション環境での起動
+## Learn More
 
-```bash
-npm start
-# または
-yarn start
-```
+To learn more about Next.js, take a look at the following resources:
 
-## ディレクトリ構成
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-```
-src/
-├── app/
-│   ├── _components/     # コンポーネント
-│   │   ├── organisms/    # Header、Footer等
-│   │   └── sections/     # 各セクション
-│   ├── context/         # Reactコンテキスト
-│   ├── globals.css      # グローバルスタイル
-│   ├── layout.tsx       # レイアウト
-│   ├── page.tsx         # トップページ
-│   └── variables.ts     # サイト設定（カンファレンス情報、メニュー等）
-└── styles/              # スタイルファイル
-```
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## サイト情報の更新
+## Deploy on Vercel
 
-カンファレンス情報やメニュー項目の更新は `src/app/variables.ts` を編集してください。
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## 技術スタック
-
-- [Next.js](https://nextjs.org/) 14.0.0
-- [React](https://react.dev/) 18
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Font Awesome](https://fontawesome.com/)
-
-## リンク
-
-- [PyCon JP Blog](https://pyconjp.blogspot.com/)
-- [行動規範](https://www.pycon.jp/policies/code-of-conduct.html)
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
