@@ -20,11 +20,11 @@ export type MenuItem = {
 // ここから下を編集する
 
 export const Conference = {
-  name: 'PyCon JP 2025',
-  conferenceDateJa: '2025年09月26日-2025年09月27日 (カンファレンス)',
-  sprintDateJa: '2025年09月28日 (スプリント)',
-  conferenceDateEn: 'September 26-27, 2025 (Conference Days)',
-  sprintDateEn: 'September 28, 2025 (Sprint Day)',
+  name: 'PyCon JP 2026',
+  conferenceDateJa: '2026年08月21日-2026年08月22日 カンファレンス',
+  sprintDateJa: '2026年08月23日 スプリント(仮)',
+  conferenceDateEn: 'August 21-22, 2026 Conference Days',
+  sprintDateEn: 'August 23, 2026 Sprint Day (tentative)',
   locationJa: '広島国際会議場',
   locationEn: 'International Conference Center Hiroshima',
 }
@@ -32,32 +32,72 @@ export const Conference = {
 export const Buttons: Button[] = [
   {
     labelEn: 'Tickets',
-    labelJa: '参加チケット\n準備中です',
-    status: 'comingSoon',
-    links: null,
+    labelJa: '参加チケット\n販売中です',
+    status: 'available',
+    links: [
+      {
+        url: 'https://pyconjp.connpass.com/event/391006/',
+        label: 'Buy Tickets / チケットを購入する',
+      }
+    ],
   },
   {
     labelEn: 'Call for Proposals',
-    labelJa: 'プロポーザル募集\n詳しくは下のボタンから',
-    status: 'available',
+    labelJa: 'プロポーザル募集は\n終了しました',
+    status: 'closed',
     links: [
-      {label: 'See More', url: 'https://pretalx.com/pycon-jp-2025/cfp'}
+      {
+        url: 'https://pretalx.com/pyconjp2026/cfp',
+        label: 'Apply Now / 応募する',
+      }
     ],
   },
   {
     labelEn: 'We need volunteers',
-    labelJa: '主催メンバー(スタッフ)募集\n詳しくは下のボタンから',
+    labelJa: '主催メンバー(スタッフ)募集中です',
     status: 'available',
     links: [
-      {label: 'See More', url: 'https://pyconjp.blogspot.com/2024/12/call-for-organizing-members-ja.html'}
+      {
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLSdl0-Tx-zt5-jqvVAMMSU55WDD79gsmfLBtHW7W1BnwW4864Q/viewform',
+        label: 'Apply Now / 応募する'
+      }
     ],
   },
   {
     labelEn: 'Please be our sponsor!',
-    labelJa: 'スポンサー募集\n詳しくは下のボタンから',
+    labelJa: 'スポンサー募集中です',
     status: 'available',
     links: [
-      {label: 'See More', url: 'https://docs.google.com/forms/d/e/1FAIpQLSfCVLHY3zMR1z7YGy8aRyJiSa64pnVpById6UjNDiwD5K0VmQ/viewform'}
+      {
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLScpX8QCcCZBn6KC2ggU4JMFghBhpxtXIN3Wr-jPiFJXRxag0g/viewform',
+        label: 'Apply Now / 応募する'
+      }
+    ],
+  },
+  {
+    labelEn: 'Travel Support Applications',
+    labelJa: '遠方支援の申し込み受付中です',
+    status: 'available',
+    links: [
+      {
+        url: 'https://pyconjp.blogspot.com/2026/05/travel-grant-2026-ja.html',
+        label: '応募する (日本語)',
+      },
+      {
+        url: 'https://pyconjp.blogspot.com/2026/05/travel-grant-2026-en.html',
+        label: 'Apply Now (English)',
+      },
+    ],
+  },
+  {
+    labelEn: 'Community Booth Applications',
+    labelJa: 'コミュニティブース\n出展募集中です',
+    status: 'available',
+    links: [
+      {
+        url: 'https://docs.google.com/forms/d/e/1FAIpQLSf3bUlEnEvTg9I-TZrn4BQUApW-9lOop9NPdM3MliKWyMFddA/viewform',
+        label: 'Apply Now / 応募する',
+      },
     ],
   },
 ]
@@ -65,19 +105,19 @@ export const Buttons: Button[] = [
 export const MenuItems: MenuItem[] = [
   {
     name: 'NEWS',
-    url: 'https://pyconjp.blogspot.com/search/label/pyconjp2025',
+    url: 'https://pyconjp.blogspot.com/search/label/pyconjp2026',
   },
   {
     name: 'VOLUNTEER',
-    url: 'https://pyconjp.blogspot.com/2024/12/call-for-organizing-members-ja.html',
+    url: null,
   },
   {
     name: 'PROPOSAL',
-    url: 'https://pretalx.com/pycon-jp-2025/cfp',
+    url: null,
   },
   {
     name: 'SPONSOR',
-    url: 'https://docs.google.com/forms/d/e/1FAIpQLSfCVLHY3zMR1z7YGy8aRyJiSa64pnVpById6UjNDiwD5K0VmQ/viewform',
+    url: null,
   },
   {
     name: 'TICKET',
